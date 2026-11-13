@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suck It Up Furnace Cleaning | Residential, Commercial, Industrial | Calgary, Airdrie, Chestermere</title>
+<meta name="description" content="Locally owned, family-run furnace and duct cleaning in Calgary, Airdrie, Chestermere and surrounding areas. Furnace, air duct, dryer vent, gas fireplace and central vacuum cleaning.">
+<style>
+@font-face{font-family:'Anton';src:url(fonts/anton-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Saira Stencil One';src:url(fonts/saira-stencil-one-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Archivo';src:url(fonts/archivo-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Archivo';src:url(fonts/archivo-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Archivo';src:url(fonts/archivo-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Archivo';src:url(fonts/archivo-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Archivo';src:url(fonts/archivo-latin-800-normal.woff2) format('woff2');font-weight:800;font-display:swap}
+:root{
+  --g:#07C02B; --g-dk:#048a1d; --ink:#0b0c0b; --ink2:#151715; --paper:#f1f0ea; --paper2:#e6e4dc; --mute:#6c6f69; --line:rgba(255,255,255,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{overflow-x:clip}
+body{font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92%);margin:0 auto}
+.stencil{font-family:'Saira Stencil One',sans-serif;font-weight:400}
+.disp{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.92}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.tag::before{content:"";width:28px;height:3px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-weight:800;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;border:2px solid transparent;transition:.2s}
+.btn-g{background:var(--g);color:var(--ink)}
+.btn-g:hover{background:#fff}
+.btn-o{border-color:#fff;color:#fff}
+.btn-o:hover{background:#fff;color:var(--ink)}
+.btn-k{background:var(--ink);color:#fff}
+.btn-k:hover{background:var(--g);color:var(--ink)}
+
+/* utility bar */
+.util{background:var(--g);color:var(--ink);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 0;gap:16px}
+.util span+span{margin-left:22px}
+/* header */
+header{background:var(--ink);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo img{height:64px;width:auto}
+nav ul{display:flex;list-style:none;gap:30px}
+nav a{color:#d9dbd6;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{color:#fff;border-color:var(--g)}
+.hcta{display:flex;align-items:center;gap:14px}
+.hcta small{display:block;color:#8d918a;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.hcta b{color:#fff;font-size:1.15rem;letter-spacing:.03em}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1.2px);background-size:5px 5px;opacity:.7}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .9fr;gap:60px;padding:80px 0 110px;align-items:start}
+.hero .tag{color:var(--g)}
+.hero h1{font-size:clamp(3.6rem,8.4vw,8.4rem);margin:22px 0 26px}
+.hero h1 .yr{display:inline-block;color:var(--ink);background:var(--g);padding:0 .12em;transform:rotate(-2deg)}
+.hero h1 .st{font-family:'Saira Stencil One';color:var(--g);font-size:.86em;display:block;margin-top:8px}
+.hero p.lead{font-size:1.2rem;color:#c8cbc4;max-width:520px}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.hero .area{margin-top:46px;display:flex;gap:28px;flex-wrap:wrap;color:#9ea29a;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.hero .area i{font-style:normal;color:var(--g);margin-right:8px}
+
+/* work order ticket form */
+.ticket{background:var(--paper);color:var(--ink);position:relative;padding:34px 32px 30px;box-shadow:14px 14px 0 var(--g)}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:radial-gradient(circle at 10px 0,transparent 7px,var(--paper) 7.5px) 0 0/20px 10px}
+.ticket .top{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px dashed #b9b7ae;padding-bottom:16px;margin-bottom:20px}
+.ticket .top h2{font-family:'Anton';font-weight:400;font-size:2.1rem;text-transform:uppercase;line-height:1}
+.ticket .top span{font-family:'Saira Stencil One';color:var(--g-dk);font-size:.95rem}
+.ticket label{display:block;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#4b4e48;margin-bottom:6px}
+.ticket input,.ticket select,.ticket textarea{width:100%;font:inherit;font-size:.95rem;padding:11px 12px;border:1.5px solid #c9c7be;background:#fff;color:var(--ink);border-radius:0}
+.ticket input:focus,.ticket select:focus,.ticket textarea:focus{outline:none;border-color:var(--ink)}
+.ticket .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.ticket .full{margin-bottom:12px}
+.ticket .seg{display:flex;border:1.5px solid var(--ink)}
+.ticket .seg label{flex:1;margin:0;text-align:center;padding:10px 4px;cursor:pointer;font-size:.72rem;color:var(--ink)}
+.ticket .seg input{display:none}
+.ticket .seg input:checked+span{background:var(--ink);color:var(--g)}
+.ticket .seg label span{display:block;margin:-10px -4px;padding:10px 4px}
+.ticket .seg label+label{border-left:1.5px solid var(--ink)}
+.ticket button{width:100%;justify-content:center;margin-top:6px;cursor:pointer}
+.ticket .ok{display:none;margin-top:12px;font-weight:700;color:var(--g-dk)}
+
+/* tape marquee */
+.tape-wrap{overflow:hidden;margin-top:-34px;padding:14px 0;position:relative;z-index:3}
+.tape{background:var(--g);transform:rotate(-1.6deg);margin:0 -2%;position:relative;z-index:3;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);overflow:hidden}
+.tape .track{display:flex;width:max-content;animation:run 32s linear infinite}
+.tape span{font-family:'Anton';font-size:1.6rem;text-transform:uppercase;padding:12px 26px;white-space:nowrap;color:var(--ink)}
+.tape span em{font-style:normal;font-family:'Saira Stencil One'}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* 40 lbs */
+.lbs{padding:130px 0 110px}
+.lbs .wrap{display:grid;grid-template-columns:auto 1fr;gap:70px;align-items:center}
+.lbs .num{font-family:'Anton';font-size:clamp(9rem,20vw,17rem);line-height:.8;color:var(--ink);position:relative}
+.lbs .num sup{font-family:'Saira Stencil One';font-size:.24em;color:var(--g-dk);vertical-align:top;margin-left:10px;position:relative;top:.3em}
+.lbs .num small{display:block;font-family:'Archivo';font-size:.9rem;font-weight:800;letter-spacing:.2em;color:var(--mute);margin-top:22px}
+.lbs h2{font-family:'Anton';font-weight:400;text-transform:uppercase;font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.02;margin:16px 0 18px}
+.lbs h2 mark{background:none;color:var(--g-dk)}
+.lbs p{font-size:1.1rem;color:#41443f;max-width:600px}
+.lbs .list{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.lbs .list b{border:2px solid var(--ink);padding:8px 14px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.lbs .list b:nth-child(odd){background:var(--ink);color:var(--g)}
+.band{height:440px;background:url(images/hero-tech.jpg) center/cover;position:relative}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,12,11,.75),rgba(11,12,11,.1) 60%)}
+.band .wrap{position:relative;z-index:2;height:100%;display:flex;align-items:flex-end;padding-bottom:40px}
+.band p{color:#fff;font-family:'Anton';font-size:clamp(1.6rem,3vw,2.6rem);text-transform:uppercase;line-height:1.05;max-width:620px}
+.band p span{color:var(--g)}
+
+/* services: index list with sticky preview */
+.svc{background:var(--ink);color:#fff;padding:120px 0}
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.svc-head .tag{color:var(--g)}
+.svc-head h2{font-size:clamp(3rem,6vw,5.6rem);margin-top:14px}
+.svc-head p{color:#9ea29a;max-width:340px;font-size:.98rem}
+.svc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}
+.svc-list{list-style:none;border-top:1px solid var(--line)}
+.svc-list li{border-bottom:1px solid var(--line)}
+.svc-list a{display:grid;grid-template-columns:70px 1fr auto;align-items:center;padding:24px 4px;gap:14px;transition:.25s}
+.svc-list .n{font-family:'Saira Stencil One';color:#5b5f57;font-size:1.1rem}
+.svc-list .t{font-family:'Anton';font-size:clamp(1.4rem,2.3vw,2rem);text-transform:uppercase;letter-spacing:.01em}
+.svc-list .k{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#7b7f77;border:1px solid #3a3d38;padding:5px 10px}
+.svc-list li.on a,.svc-list a:hover{padding-left:18px;background:linear-gradient(90deg,rgba(7,192,43,.12),transparent)}
+.svc-list li.on .n,.svc-list a:hover .n{color:var(--g)}
+.svc-list li.on .t{color:var(--g)}
+.svc-view{position:sticky;top:120px;align-self:start}
+.svc-view .frame{position:relative;aspect-ratio:4/3;overflow:hidden;border:2px solid var(--g);clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,0 100%)}
+.svc-view img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.svc-view .cap{display:flex;justify-content:space-between;margin-top:16px;font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#9ea29a}
+.svc-view .cap b{color:var(--g)}
+.svc-view .btn{margin-top:26px}
+.svc-list .mimg{display:none}
+
+/* why */
+.why{background:var(--g);padding:110px 0;position:relative;overflow:hidden}
+.why .bigword{position:absolute;right:-2%;top:30px;font-family:'Saira Stencil One';font-size:clamp(8rem,18vw,16rem);color:rgba(11,12,11,.08);line-height:.8;pointer-events:none}
+.why h2{font-size:clamp(3rem,6vw,5.4rem);position:relative}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:60px;border-top:3px solid var(--ink);position:relative}
+.why-grid div{padding:34px 26px 10px 0}
+.why-grid div+div{padding-left:26px;border-left:2px solid rgba(11,12,11,.25)}
+.why-grid em{font-style:normal;font-family:'Anton';font-size:3.4rem;line-height:1;-webkit-text-stroke:2px var(--ink);color:transparent}
+.why-grid h3{font-family:'Anton';font-weight:400;font-size:1.55rem;text-transform:uppercase;line-height:1.05;margin:18px 0 12px}
+.why-grid p{font-size:.98rem;color:#132015}
+
+/* about */
+.about{background:var(--paper);padding:130px 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.pics{position:relative;height:560px}
+.pics .p1{position:absolute;left:0;top:0;width:78%;border:10px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,.18)}
+.pics .p2{position:absolute;right:0;bottom:0;width:44%;border:10px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,.22);transform:rotate(3deg)}
+.pics .stamp{position:absolute;left:6%;bottom:6%;background:var(--ink);color:#fff;padding:18px 22px;transform:rotate(-4deg)}
+.pics .stamp b{display:block;font-family:'Anton';font-size:3rem;line-height:1;color:var(--g)}
+.pics .stamp span{font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.about .tag{color:var(--g-dk)}
+.about h2{font-size:clamp(2.8rem,5vw,4.6rem);margin:16px 0 26px}
+.about h2 .st{font-family:'Saira Stencil One';color:var(--g-dk);display:block}
+.about p{font-size:1.08rem;color:#3c3f3a;margin-bottom:16px}
+.nots{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:30px 0 34px;border:2px solid var(--ink)}
+.nots div{padding:16px 12px;text-align:center;font-size:.76rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.nots div+div{border-left:2px solid var(--ink)}
+.nots s{text-decoration:line-through;text-decoration-color:var(--g);text-decoration-thickness:3px;display:block;font-family:'Anton';font-size:1.25rem;text-transform:uppercase;letter-spacing:.02em;margin-top:4px}
+
+/* reviews */
+.rev{background:var(--paper2);padding:120px 0;border-top:1px solid #d5d3ca}
+.rev .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.rev .count{font-family:'Anton';font-size:clamp(6rem,12vw,10rem);line-height:.85}
+.rev .count span{color:var(--g-dk)}
+.stars{display:flex;gap:6px;margin:16px 0 10px}
+.stars svg{width:30px;height:30px;fill:var(--g)}
+.rev .sub{font-family:'Anton';font-size:1.8rem;text-transform:uppercase}
+.rev .sub2{color:var(--mute);margin-top:8px}
+.quote{background:var(--ink);color:#fff;padding:44px 40px 36px;position:relative}
+.quote::before{content:"\201C";position:absolute;top:-44px;left:28px;font-family:'Anton';font-size:9rem;color:var(--g);line-height:1}
+.quote blockquote{font-family:'Anton';font-size:clamp(1.8rem,3vw,2.6rem);text-transform:uppercase;line-height:1.08}
+.quote .who{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.quote .who b{font-size:.95rem;letter-spacing:.06em}
+.quote .who span{display:block;color:#8d918a;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.quote .who a{color:var(--g);font-weight:800;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid var(--g)}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.badges div{background:#fff;display:flex;align-items:center;justify-content:center;padding:14px;height:110px;border:1px solid #d5d3ca}
+.badges img{max-height:80px;width:auto;object-fit:contain}
+
+/* community */
+.comm{background:var(--ink);color:#fff;padding:120px 0;overflow:hidden}
+.comm .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.comm .tag{color:var(--g)}
+.comm h2{font-size:clamp(3rem,6vw,5.4rem);margin:16px 0 22px}
+.comm h2 .st{font-family:'Saira Stencil One';color:var(--g);display:block}
+.comm p{color:#bfc2bb;font-size:1.1rem;max-width:440px;margin-bottom:30px}
+.board{position:relative;height:520px}
+.board figure{position:absolute;background:#fff;padding:10px 10px 36px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.board figure img{width:100%;height:100%;object-fit:cover}
+.board figure::before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:24px;margin-left:-45px;background:rgba(7,192,43,.75);transform:rotate(-4deg)}
+.board .f1{width:52%;height:270px;left:0;top:10px;transform:rotate(-4deg)}
+.board .f2{width:30%;height:300px;right:4%;top:0;transform:rotate(5deg)}
+.board .f3{width:30%;height:270px;left:14%;bottom:0;transform:rotate(3deg)}
+.board .f4{width:34%;height:250px;right:16%;bottom:10px;transform:rotate(-3deg)}
+
+/* contact */
+.contact{background:var(--g);padding:0}
+.contact .wrap{display:grid;grid-template-columns:1.3fr 1fr;align-items:stretch}
+.contact .l{padding:100px 60px 100px 0}
+.contact .l .tag{color:var(--ink)}
+.contact .l h2{font-size:clamp(2.6rem,5vw,4.6rem);margin:16px 0 28px}
+.contact .phone{font-family:'Anton';font-size:clamp(3.4rem,8vw,7rem);line-height:.9;display:inline-block;border-bottom:6px solid var(--ink)}
+.contact .phone:hover{color:#fff;border-color:#fff}
+.contact .l p{margin-top:22px;font-weight:600;font-size:1.05rem}
+.contact .r{background:var(--ink);color:#fff;padding:100px 0 100px 60px;position:relative}
+.contact .r{box-shadow:0 0 0 100vmax var(--ink);clip-path:inset(0 -100vmax 0 0)}
+.contact dl div{padding:20px 0;border-bottom:1px solid var(--line)}
+.contact dt{font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--g);margin-bottom:6px}
+.contact dd{font-size:1.15rem;font-weight:600}
+.soc{display:flex;gap:12px;margin-top:28px}
+.soc a{width:46px;height:46px;border:2px solid #3a3d38;display:grid;place-items:center;transition:.2s}
+.soc a:hover{background:var(--g);border-color:var(--g)}
+.soc a:hover svg{fill:var(--ink)}
+.soc svg{width:20px;height:20px;fill:#fff}
+
+/* footer */
+footer{background:#050605;color:#9ea29a;padding:80px 0 0;font-size:.93rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:60px}
+.fgrid img{height:78px;width:auto;margin-bottom:18px}
+.fgrid h4{color:#fff;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.fgrid ul{list-style:none}
+.fgrid li{margin-bottom:10px}
+.fgrid a:hover{color:var(--g)}
+.fbot{border-top:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.84rem}
+.fbot a{color:var(--g)}
+
+@media (max-width:1080px){
+  nav{display:none}
+  nav.open{display:block;position:absolute;top:84px;left:0;right:0;background:var(--ink);padding:20px 4%;border-bottom:2px solid var(--g)}
+  nav.open ul{flex-direction:column;gap:16px}
+  .burger{display:block}
+  .hcta .txt{display:none}
+  .hero .wrap,.svc-grid,.about .wrap,.rev .wrap,.comm .wrap,.contact .wrap{grid-template-columns:1fr}
+  .svc-view{display:none}
+  .svc-list .mimg{display:block;grid-column:1/-1;aspect-ratio:16/9;object-fit:cover;width:100%;margin-top:6px}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .why-grid div:nth-child(3){padding-left:0;border-left:0}
+  .lbs .wrap{grid-template-columns:1fr;gap:30px}
+  .contact .l{padding:80px 0 50px}
+  .contact .r{padding:50px 0 70px}
+  .contact .r::after{display:none}
+  .contact .r{box-shadow:0 0 0 100vmax var(--ink);clip-path:inset(0 -100vmax)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .util .wrap{justify-content:center}.util .hide{display:none}
+  .logo img{height:52px}
+  .hero .wrap{padding:56px 0 90px}
+  .ticket{padding:26px 20px;box-shadow:8px 8px 0 var(--g)}
+  .ticket .row{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .why-grid div+div{padding-left:0;border-left:0;border-top:2px solid rgba(11,12,11,.25)}
+  .pics{height:400px}
+  .nots{grid-template-columns:1fr}.nots div+div{border-left:0;border-top:2px solid var(--ink)}
+  .badges{grid-template-columns:1fr 1fr}
+  .board{height:620px}
+  .board .f1{width:70%;height:220px}.board .f2{width:44%;height:230px;top:180px}.board .f3{width:46%;height:220px;bottom:40px;left:0}.board .f4{width:46%;height:200px;right:2%;bottom:0}
+  .fgrid{grid-template-columns:1fr}
+  .band{height:320px}
+  .svc-list .k{display:none}.svc-list a{grid-template-columns:44px 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <div><span>Residential</span><span>Commercial</span><span>Industrial</span></div>
+    <div class="hide">Calgary · Airdrie · Chestermere &amp; surrounding areas</div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo"><img src="images/logo.png" alt="Suck It Up Furnace Cleaning"></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#" class="on">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Residential</a></li>
+        <li><a href="#services">Commercial</a></li>
+        <li><a href="#quote">Quote</a></li>
+        <li><a href="#reviews">FAQ's &amp; Reviews</a></li>
+      </ul>
+    </nav>
+    <div class="hcta">
+      <a href="tel:4038356028" class="txt"><small>Call or text us</small><b>403.835.6028</b></a>
+      <a href="tel:4038356028" class="btn btn-g">Call or Text</a>
+      <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">Locally owned · Family operated · Since 2017</span>
+      <h1 class="disp">Start your <span class="yr">2026</span><span class="st">Fresh &amp; Clean!</span></h1>
+      <p class="lead">Our quality services will ensure you and your loved ones breathe clean, healthy air at home or work.</p>
+      <div class="acts">
+        <a href="tel:4038356028" class="btn btn-g">Call, Text or Message Us Today</a>
+        <a href="#services" class="btn btn-o">Our Services</a>
+      </div>
+      <div class="area"><span><i>&#9679;</i>Calgary</span><span><i>&#9679;</i>Airdrie</span><span><i>&#9679;</i>Chestermere</span><span><i>&#9679;</i>Surrounding areas</span></div>
+    </div>
+
+    <form class="ticket" id="quote" onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';this.reset();">
+      <div class="top"><h2>Request a Quote</h2><span>WORK ORDER</span></div>
+      <div class="full">
+        <label>Property type</label>
+        <div class="seg">
+          <label><input type="radio" name="type" checked><span>Residential</span></label>
+          <label><input type="radio" name="type"><span>Commercial</span></label>
+          <label><input type="radio" name="type"><span>Industrial</span></label>
+        </div>
+      </div>
+      <div class="row">
+        <div><label for="n">Name</label><input id="n" required></div>
+        <div><label for="p">Phone</label><input id="p" type="tel" required></div>
+      </div>
+      <div class="row">
+        <div><label for="e">Email</label><input id="e" type="email"></div>
+        <div><label for="c">City</label>
+          <select id="c"><option>Calgary</option><option>Airdrie</option><option>Chestermere</option><option>Surrounding area</option></select>
+        </div>
+      </div>
+      <div class="full"><label for="s">Service</label>
+        <select id="s">
+          <option>Furnace Inspection &amp; Cleaning</option><option>Air Duct Cleaning</option><option>Dryer Vent Cleaning</option><option>Gas Fireplace Cleaning</option><option>Central Vacuum Systems</option><option>Commercial &amp; Multifamily Homes</option><option>Nest/Pest Removal (in vents)</option><option>Roof Top Dryer Vent Cleaning</option>
+        </select>
+      </div>
+      <div class="full"><label for="m">Message</label><textarea id="m" rows="2"></textarea></div>
+      <button class="btn btn-k" type="submit">Send My Request &rarr;</button>
+      <p class="ok">Thanks! We'll be in touch shortly.</p>
+    </form>
+  </div>
+</section>
+
+<div class="tape-wrap"><div class="tape" aria-hidden="true">
+  <div class="track">
+    <span><em>WE SUCK…</em></span><span>Dirt</span><span>✚</span><span>Dust</span><span>✚</span><span>Debris</span><span>✚</span><span>Dander</span><span>✚</span>
+    <span><em>WE SUCK…</em></span><span>Dirt</span><span>✚</span><span>Dust</span><span>✚</span><span>Debris</span><span>✚</span><span>Dander</span><span>✚</span>
+    <span><em>WE SUCK…</em></span><span>Dirt</span><span>✚</span><span>Dust</span><span>✚</span><span>Debris</span><span>✚</span><span>Dander</span><span>✚</span>
+    <span><em>WE SUCK…</em></span><span>Dirt</span><span>✚</span><span>Dust</span><span>✚</span><span>Debris</span><span>✚</span><span>Dander</span><span>✚</span>
+  </div>
+</div></div>
+
+<section class="lbs">
+  <div class="wrap">
+    <div class="num">40<sup>LBS</sup><small>Every home · Every year</small></div>
+    <div>
+      <span class="tag" style="color:var(--g-dk)">Why it matters</span>
+      <h2>That's how much dirt, dust, debris &amp; dander collects in the average home <mark>each year.</mark></h2>
+      <p>All of it circulates through your ductwork and can affect your respiratory health and allergies. We have the knowledge, experience, skill and equipment to handle jobs of all sizes.</p>
+      <div class="list"><b>Air quality</b><b>Energy savings</b><b>Healthier home</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap"><p>Breathe clean, healthy air <span>at home or work.</span></p></div>
+</div>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="svc-head">
+      <div><span class="tag">Our services</span><h2 class="disp">What we<br>suck up</h2></div>
+      <p>Residential, commercial and industrial. Pick a service to see it, then call, text or message us for a quote.</p>
+    </div>
+    <div class="svc-grid">
+      <ul class="svc-list" id="svcList">
+        <li class="on" data-img="images/service-furnace.jpg"><a href="#quote"><span class="n">01</span><span class="t">Furnace Inspection &amp; Cleaning</span><span class="k">Residential</span></a><img class="mimg" src="images/service-furnace.jpg" alt="Furnace inspection and cleaning"></li>
+        <li data-img="images/service-air-duct.jpg"><a href="#quote"><span class="n">02</span><span class="t">Air Duct Cleaning</span><span class="k">All properties</span></a><img class="mimg" src="images/service-air-duct.jpg" alt="Air duct cleaning"></li>
+        <li data-img="images/service-dryer-vent.jpg"><a href="#quote"><span class="n">03</span><span class="t">Dryer Vent Cleaning</span><span class="k">All properties</span></a><img class="mimg" src="images/service-dryer-vent.jpg" alt="Dryer vent cleaning"></li>
+        <li data-img="images/service-gas-fireplace.jpg"><a href="#quote"><span class="n">04</span><span class="t">Gas Fireplace Cleaning</span><span class="k">Residential</span></a><img class="mimg" src="images/service-gas-fireplace.jpg" alt="Gas fireplace cleaning"></li>
+        <li data-img="images/service-central-vacuum.jpg"><a href="#quote"><span class="n">05</span><span class="t">Central Vacuum Systems</span><span class="k">Residential</span></a><img class="mimg" src="images/service-central-vacuum.jpg" alt="Central vacuum system cleaning"></li>
+        <li data-img="images/commercial-windows.jpg"><a href="#quote"><span class="n">06</span><span class="t">Commercial &amp; Multifamily Homes</span><span class="k">Commercial</span></a><img class="mimg" src="images/commercial-windows.jpg" alt="Commercial and multifamily cleaning"></li>
+        <li data-img="images/service-nest-removal.jpg"><a href="#quote"><span class="n">07</span><span class="t">Nest/Pest Removal (in vents)</span><span class="k">All properties</span></a><img class="mimg" src="images/service-nest-removal.jpg" alt="Nest and pest removal from vents"></li>
+        <li data-img="images/service-rooftop-dryer.jpg"><a href="#quote"><span class="n">08</span><span class="t">Roof Top Dryer Vent Cleaning</span><span class="k">Commercial</span></a><img class="mimg" src="images/service-rooftop-dryer.jpg" alt="Roof top dryer vent cleaning"></li>
+      </ul>
+      <div class="svc-view">
+        <div class="frame"><img id="svcImg" src="images/service-furnace.jpg" alt="Service preview"></div>
+        <div class="cap"><span id="svcName">Furnace Inspection &amp; Cleaning</span><b id="svcNum">01 / 08</b></div>
+        <a href="#quote" class="btn btn-g">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="bigword">WHY?!</div>
+  <div class="wrap">
+    <span class="tag">The difference</span>
+    <h2 class="disp" style="margin-top:14px">Why choose us?!</h2>
+    <div class="why-grid">
+      <div><em>01</em><h3>Locally Owned &amp; Operated</h3><p>We treat your home as if it was ours!</p></div>
+      <div><em>02</em><h3>Top Customer Service</h3><p>You can count on us to be professional, timely, efficient and make sure you're happy every step of the way.</p></div>
+      <div><em>03</em><h3>The Latest Equipment, Technology &amp; Training</h3><p>We always use top quality equipment that is updated and maintained regularly to the highest standards.</p></div>
+      <div><em>04</em><h3>Over 2000 5 Star Reviews!</h3><p>See what people are saying about us!</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="pics">
+      <img class="p1" src="images/team.jpg" alt="The Suck It Up Furnace Cleaning team">
+      <img class="p2" src="images/truck.jpg" alt="Suck It Up Furnace Cleaning truck">
+      <div class="stamp"><b>2017</b><span>Industry leader since</span></div>
+    </div>
+    <div>
+      <span class="tag">About us</span>
+      <h2 class="disp">Local. Family run.<span class="st">The real deal.</span></h2>
+      <p>Suck It Up Furnace Cleaning is locally owned and family operated, and has been an industry leader since 2017.</p>
+      <p>We have the knowledge, experience, skill and equipment to handle jobs of all sizes. Our business was created and is run by family, right here at home.</p>
+      <div class="nots">
+        <div>We are not a<s>National licensee</s></div>
+        <div>We are not a<s>Franchise</s></div>
+        <div>We are not a<s>Subcontractor</s></div>
+      </div>
+      <a href="tel:4038356028" class="btn btn-k">Call or Text 403.835.6028</a>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div>
+      <span class="tag" style="color:var(--g-dk)">FAQ's &amp; Reviews</span>
+      <div class="count" style="margin-top:14px">2000<span>+</span></div>
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+      </div>
+      <div class="sub">5 star reviews</div>
+      <p class="sub2">See what people are saying about us!</p>
+      <div class="badges">
+        <div><img src="images/badge-homestars.png" alt="HomeStars Verified"></div>
+        <div><a href="https://calgarybestrated.com" target="_blank" rel="noopener"><img src="images/badge-calgary-best-rated.png" alt="Calgary's Best Rated"></a></div>
+        <div><img src="images/badge-community-votes.jpg" alt="Community Votes Airdrie 2025 Winners"></div>
+        <div><img src="images/badge-satisfaction.png" alt="100% Satisfaction Guaranteed"></div>
+      </div>
+    </div>
+    <div class="quote">
+      <blockquote>You will not find a better price.</blockquote>
+      <div class="who">
+        <div><b>James Moran</b><span>Verified customer</span></div>
+        <a href="#">See more reviews here &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="comm">
+  <div class="wrap">
+    <div>
+      <span class="tag">Community</span>
+      <h2 class="disp">In the<span class="st">community!</span></h2>
+      <p>We are always looking for our next wonderful, local person, organization or event to get involved with.</p>
+      <a href="mailto:info@suckitupfc.ca" class="btn btn-g">Reach Out to Us</a>
+    </div>
+    <div class="board">
+      <figure class="f1"><img src="images/community-hockey.jpg" alt="Sponsored youth hockey"></figure>
+      <figure class="f2"><img src="images/community-jersey.jpg" alt="Suck It Up sponsored jersey"></figure>
+      <figure class="f3"><img src="images/community-sign.jpg" alt="Community support"></figure>
+      <figure class="f4"><img src="images/community-shirt.jpg" alt="Sponsored team shirt"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="l">
+      <span class="tag">Contact</span>
+      <h2 class="disp">Call, text or<br>message us today!</h2>
+      <a href="tel:4038356028" class="phone">403.835.6028</a>
+      <p>Serving Calgary, Airdrie, Chestermere &amp; surrounding areas.</p>
+    </div>
+    <div class="r">
+      <dl>
+        <div><dt>Phone / Text</dt><dd><a href="tel:4038356028">403.835.6028</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@suckitupfc.ca">info@suckitupfc.ca</a></dd></div>
+        <div><dt>Service area</dt><dd>Calgary, Airdrie, Chestermere &amp; surrounding areas</dd></div>
+      </dl>
+      <div class="soc">
+        <a href="https://www.facebook.com/suckitupfurnace" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+        <a href="https://www.instagram.com/suckitupfurnacecleaning" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm4.9-9.1a1.1 1.1 0 1 0 1.1 1.1 1.1 1.1 0 0 0-1.1-1.1zM21.9 7.9a6.3 6.3 0 0 0-1.7-4.1A6.3 6.3 0 0 0 16.1 2C14.5 2 9.5 2 7.9 2a6.3 6.3 0 0 0-4.1 1.7A6.3 6.3 0 0 0 2 7.9c-.1 1.6-.1 6.6 0 8.2a6.3 6.3 0 0 0 1.7 4.1A6.3 6.3 0 0 0 7.9 22c1.6.1 6.6.1 8.2 0a6.3 6.3 0 0 0 4.1-1.7 6.3 6.3 0 0 0 1.7-4.1c.1-1.6.1-6.6 0-8.3zM19.8 18a3.3 3.3 0 0 1-1.9 1.9c-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4A3.3 3.3 0 0 1 4.2 18c-.5-1.3-.4-4.4-.4-5.9s-.1-4.6.4-5.9A3.3 3.3 0 0 1 6.1 4.3c1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 0 1 1.9 1.9c.5 1.3.4 4.4.4 5.9s.1 4.6-.4 5.9z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="images/logo.png" alt="Suck It Up Furnace Cleaning">
+        <p>Residential, Commercial, Industrial. Locally owned and family operated since 2017.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Residential</a></li><li><a href="#services">Commercial</a></li><li><a href="#quote">Quote</a></li><li><a href="#reviews">FAQ's &amp; Reviews</a></li></ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li>Furnace Inspection &amp; Cleaning</li><li>Air Duct Cleaning</li><li>Dryer Vent Cleaning</li><li>Gas Fireplace Cleaning</li><li>Central Vacuum Systems</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:4038356028">403.835.6028</a></li><li><a href="mailto:info@suckitupfc.ca">info@suckitupfc.ca</a></li><li>Calgary, Airdrie, Chestermere &amp; surrounding areas</li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap fbot">
+    <span>&copy; 2026 Suck It Up Furnace Cleaning. All rights reserved. · <a href="https://www.suckitupfc.ca/general-8" target="_blank" rel="noopener">Client Agreement Terms</a></span>
+    <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+  </div>
+</footer>
+
+<script>
+const items=document.querySelectorAll('#svcList li'),img=document.getElementById('svcImg'),nm=document.getElementById('svcName'),nu=document.getElementById('svcNum');
+items.forEach((li,i)=>li.addEventListener('mouseenter',()=>{
+  items.forEach(x=>x.classList.remove('on'));li.classList.add('on');
+  img.style.opacity=0;setTimeout(()=>{img.src=li.dataset.img;img.style.opacity=1},150);
+  nm.textContent=li.querySelector('.t').textContent;nu.textContent=String(i+1).padStart(2,'0')+' / 08';
+}));
+</script>
+</body>
+</html>
